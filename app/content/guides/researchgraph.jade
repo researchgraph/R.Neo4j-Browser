@@ -1,0 +1,28 @@
+article.guide
+  .container-fluid
+    .row
+      .col-sm-3
+        .box-max
+          img.img-responsive(src='images/research-graph.png')
+          p
+            | <br />
+            | Research Graph extension installed<br />
+            | Version 3.0.2
+      .col-sm-7.col-sm-offset-1
+        h3 Query templates
+        ul
+          li Search publication by DOI
+            figure
+              pre.code.runnable(mode='cypher') match (n:publication) where n.doi=''####.##/####.####' return n
+        ul
+          li Search datasets by DOI
+            figure
+              pre.code.runnable(mode='cypher') match (n:dataset) where n.doi=''####.##/####.####' return n
+        ul
+          li Search grants by Grant ID
+            figure
+              pre.code.runnable(mode='cypher') match (n:grant) where n.grant_id='##########' return n
+        ul
+          li Search researchers by ORCID
+            figure
+              pre.code.runnable(mode='cypher') match (n:researcher) where n.orcid_id='####-####-####-####' return n
