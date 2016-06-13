@@ -41,6 +41,41 @@ angular.module('neo4jApp.services')
         'text-color-external': '#000000'
         'text-color-internal': '#FFFFFF'
         'caption': '<type>'
+      'node.dataset':
+        'color': '#FF756E'
+        'border-color': '#E06760'
+        'text-color-internal': '#FFFFFF'
+        'diameter': '50px'
+        'caption': '{node_type}'
+      'node.researcher':
+        'color': '#6DCE9E'
+        'border-color': '#60B58B'
+        'text-color-internal': '#FFFFFF'
+        'diameter': '65px'
+        'caption': '{node_type}'
+      'node.grant':
+        'color': '#FFD86E'
+        'border-color': '#EDBA39'
+        'text-color-internal': '#604A0E'
+        'caption': '{node_type}'
+      'node.publication':
+        'color': '#68BDF6'
+        'border-color': '#5CA8DB'
+        'text-color-internal': '#FFFFFF'
+        'diameter': '50px'
+        'caption': '{node_type}'
+      'node.institution':
+        'color': '#000000'
+        'border-color': '#9AA1AC'
+        'text-color-internal': '#FFFFFF'
+        'diameter': '65px'
+        'caption': '{node_type}'
+      'node.version':
+        'color': '#333333'
+        'border-color': '#000000'
+        'text-color-internal': '#FFFFFF'
+        'diameter': '65px'
+        'caption': '{version}'
 
     # Default node sizes that user can choose from
     @defaultSizes = [
