@@ -13,16 +13,16 @@ article.guide
         ul
           li Search publication by DOI
             figure
-              pre.code.runnable(mode='cypher') match (n:publication) where n.doi='10.1371/journal.pone.0079092' return n
+              pre.code.runnable.standalone-example(mode='cypher') match (n:publication) where n.doi='10.1371/journal.pone.0079092' return n
         ul
           li Search datasets by DOI
             figure
-              pre.code.runnable(mode='cypher') match (n:dataset) where n.doi='10.5061/dryad.4qq0v' return n
+              pre.code.runnable.standalone-example(mode='cypher') match (n:dataset) where n.doi='10.5061/dryad.4qq0v' return n
         ul
           li Search grants by PURL
             figure
-              pre.code.runnable(mode='cypher') match (n:grant) where n.purl='purl.org/au-research/grants/arc/LP0989727' return n
+              pre.code.runnable.standalone-example(mode='cypher') match (n:grant) where n.purl='purl.org/au-research/grants/arc/LP0989727' return n
         ul
           li Search researchers by ORCID
             figure
-              pre.code.runnable(mode='cypher') match (n:researcher) where n.orcid='0000-0002-1259-3531' return n
+              pre.code.runnable.standalone-example(mode='cypher') match (n:researcher) where n.orcid='0000-0002-1259-3531' return n
