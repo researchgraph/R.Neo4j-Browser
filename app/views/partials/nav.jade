@@ -13,6 +13,8 @@
       a.favorites.sl.sl-star(ng-click='toggleDrawer("scripts")')
     li(ng-class='{active: showingDrawer("info") }', tooltip='Documentation',tooltip-placement='right', tooltip-enable='!showingDrawer("info")')
       a.guides.sl.sl-book(ng-click='toggleDrawer("info")')
+    li(ng-class='{active: showingDrawer("researchgraph") }', tooltip='Research Graph',tooltip-placement='right', tooltip-enable='!showingDrawer("researchgraph")')
+      a.researchgraph.sl(ng-click='toggleDrawer("researchgraph")')
   ul.nav.bottom
     li.nav-user(ng-class='{active: showingDrawer("profile") }', tooltip='Cloud Services',tooltip-placement='right', tooltip-enable='!showingDrawer("profile")')
       a.cloud(ng-click='toggleDrawer("profile")')

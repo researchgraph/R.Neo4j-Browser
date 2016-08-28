@@ -111,6 +111,8 @@
             color: color-database
           &.favorites
             color: color-favorites
+          &.researchgraph
+            color: color-researchgraph
           &.guides
             color: color-guides
           &.cloud
@@ -130,6 +132,12 @@
           left: 20px
           border-radius: 50%
           border: 2px solid #d8dde2
+          
+      > a.researchgraph
+        height: 70px
+        background: transparent url('/images/research-graph-left.png') no-repeat center 0
+        &:hover
+          background: transparent url('/images/research-graph-left.png') no-repeat center -70px
       &.active
         > a
           // color: #fff
@@ -139,6 +147,8 @@
           color: color-database
         > .favorites
           color: color-favorites
+        > .researchgraph
+          color: color-researchgraph
         > .guides
           color: color-guides
         > .cloud
@@ -147,11 +157,14 @@
           color: color-preferences
         > .credits
           font-weight: 300
+        > a.researchgraph
+          background: drawer-color-bg url('/images/research-graph-left.png') no-repeat center -70px
+
   absolute: top left
   width: 80px
   bottom: 0
   background: navbar-color-bg
-
+  
   .nav-header:hover .ball
     background: #fff
     background: linear-gradient(top, #fff, #fff)
@@ -201,3 +214,7 @@
     .ball
       background: color-error
       box-shadow: none
+
+  
+  
+

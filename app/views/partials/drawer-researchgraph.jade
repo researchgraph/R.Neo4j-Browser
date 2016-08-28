@@ -1,0 +1,44 @@
+.inner
+  h4 Research Graph
+  ul
+    li
+      a(play-topic='researchgraph') Query templates
+    li
+
+  h5 Find a dataset
+  ul
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:dataset) where n.doi=\'PLEASE ADD THE DOI HERE\' return n\")") Search by DOI
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:dataset) where n.doi=~\'PLEASE ADD THE DOI PREFIX HERE/.*\' return n\")") Search by DOI Prefix 
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:dataset) where n.title=\'PLEASE ADD THE TITLE HERE\' return n\")") Search by title
+
+  h5 Find a publication
+  ul
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:publication) where n.doi=\'PLEASE ADD THE DOI HERE\' return n\")") Search by DOI
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:publication) where n.doi=~\'PLEASE ADD THE DOI PREFIX HERE/.*\' return n\")") Search by DOI Prefix 
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:publication) where n.title=\'PLEASE ADD THE TITLE HERE\' return n\")") Search by title
+
+  h5 Find a researcher
+  ul
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:researcher) where n.orcid=\'PLEASE ADD THE ORCID HERE\' return n\")") Search by ORCID 
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:researcher) where n.full_name=~\'.*PLEASE ADD THE NAME PART HERE.*\' return n\")") Search by name
+
+  h5 Find a grant
+  ul
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:grant) where n.title=\'PLEASE ADD THE TITLE HERE\' return n\")") Search by title 
+    li
+      a.play-query(ng-click="editor.setContent(\"match (n:grant) where n.participant_list=~\'.*PLEASE ADD FIRST NAME OR SURENAME HERE.*\' return n\")") Search by the grant participants
+
+  h5 Advance queries
+  ul
+    li
+      a.play-query(ng-click="editor.setContent(\"MATCH p=shortestPath((d1:dataset {doi: \'PLEASE ADD THE DOI 1 HERE\'})-[*]-(d2:dataset {doi:\'PLEASE ADD THE DOI 2 HERE\'})) RETURN p\")") Shortest path between datasets by DOI
+  
