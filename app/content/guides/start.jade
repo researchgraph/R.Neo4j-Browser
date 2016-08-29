@@ -42,6 +42,29 @@ article.guide
               li Cluster health and status
             .clearfix
           button.btn.btn-cta(play-topic='sysinfo') Monitor
+          
+        .teaser#rd-switchboard-block.teaser-3
+          .rd-switchboard
+            a.no-out-symbol.logo-img(href='http://rd-switchboard.org/')
+              img.logo(src='images/rd-switchboard-logo.png')
+            .logo-txt
+              a.no-out-symbol(href='http://rd-switchboard.org/')
+                | RD-Switchboard
+                span Graph Database
+            .clearfix
+          p#rd-switchboard-intro.lead
+            | Welcome to
+            br
+            | Research Data Switchboard
+            br
+            | Graph Database
+          a(href="http://www.rd-switchboard.org/").link-btn.btn.btn-cta Visit RD-Switchboard.ord
+
+        .teaser.teaser-3
+          img.img-responsive.researchgraph(src='images/research-graph.png')
+          p.lead.researchgraph Research Graph extension installed
+          p.lead.researchgraph Research Graph schema version 2.0
+          button.btn.btn-cta(play-topic='researchgraph') Sample Queries
 
     .hero-unit
       p(ng-class="{'motd-bang': motd.callToAction.bang}")
