@@ -35,10 +35,10 @@
     li
       a.play-query(ng-click="editor.setContent(\"match (n:grant) where n.title=\'PLEASE ADD THE TITLE HERE\' return n\")") Search by title 
     li
-      a.play-query(ng-click="editor.setContent(\"match (n:grant) where n.participant_list=~\'.*PLEASE ADD FIRST NAME OR SURENAME HERE.*\' return n\")") Search by the grant participants
+      a.play-query(ng-click="editor.setContent(\"match (n:grant) where n.participant_list=~\'.*PLEASE ADD FIRST NAME OR SURENAME HERE.*\' return n\")") Search by participants
 
   h5 Advance queries
   ul
     li
-      a.play-query(ng-click="editor.setContent(\"MATCH p=shortestPath((d1:dataset {doi: \'PLEASE ADD THE DOI 1 HERE\'})-[*]-(d2:dataset {doi:\'PLEASE ADD THE DOI 2 HERE\'})) RETURN p\")") Shortest path between datasets by DOI
+      a.play-query(ng-click="editor.setContent(\"MATCH p=shortestPath((d1:dataset {doi: \'PLEASE ADD THE DOI 1 HERE\'})-[*]-(d2:dataset {doi:\'PLEASE ADD THE DOI 2 HERE\'})) RETURN p\")") Shortest path between datasets
   
