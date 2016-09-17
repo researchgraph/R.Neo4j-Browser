@@ -14,7 +14,7 @@ function message() {
 	echo
 }
 
-message "RD-Switchboard Graph Database Build Script"
+message "Building the R.Neo4j-Browser and creating a JAR file."
 
 message "Installing Node Modules"
 
